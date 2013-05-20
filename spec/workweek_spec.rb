@@ -33,7 +33,7 @@ describe Harvester::Workweek do
       })
   end
 
-  context 'worked like a Keyvan' do
+  context 'worked hard' do
     subject { Harvester::Workweek.new [17,12,15,11,12,4,0] }
     expect_day(0, {
       total:17,
@@ -49,7 +49,7 @@ describe Harvester::Workweek do
       })
   end
 
-  context 'worked like a Jonathan' do
+  context 'worked soft' do
     subject { Harvester::Workweek.new [7,5,3,4,0,0,0] }
     expect_week({
       total:19,

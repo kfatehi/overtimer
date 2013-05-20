@@ -9,8 +9,8 @@ module Harvester
     if File.exists? CONFIG_PATH
       CONFIG = YAML.load_file CONFIG_PATH
     else
-      puts "Expected config file here: #{CONFIG_PATH}"
-      exit
+      puts "Company expected config file here: #{CONFIG_PATH}."
+      CONFIG = {}
     end
 
     def harvest
