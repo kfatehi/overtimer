@@ -1,4 +1,4 @@
-module Harvester
+module Overtimer
   class Workbase
     attr_reader :total, :regular, :overtime
     attr_accessor :doubletime

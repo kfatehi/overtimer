@@ -1,6 +1,6 @@
-require 'harvester/workbase'
+require 'overtimer/workbase'
 
-module Harvester
+module Overtimer
   class Workday < Workbase
     def self.max_regular
       8
@@ -9,7 +9,7 @@ module Harvester
       4
     end
     def initialize hours
-      super     
+      super
       account_for_hours hours
     end
   end
@@ -36,12 +36,8 @@ module Harvester
       end
     end
 
-    def get_day index
+    def [] index
       @days[index]
-    end
-
-    def to_s
-      'hi'
     end
   end
 end
