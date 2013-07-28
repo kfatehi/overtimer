@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["keyvan@digitalfilmtree.com"]
   spec.description   = %q{Calculates employee payroll info based on California laws (overtime, doubletime, etc)}
   spec.summary       = %q{calculates overtime based on California law}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/keyvanfatehi/overtimer"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
